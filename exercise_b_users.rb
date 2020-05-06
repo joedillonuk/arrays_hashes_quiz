@@ -82,7 +82,8 @@ users["Erik"][:pets].push(
   name: "Fluffy",
   species: "Dog"
 )
-p users["Erik"][:pets]
+p "Erik's new pet " + users["Erik"][:pets][4][:name] + " is a " + users["Erik"][:pets][4][:species]
+
 # 10. Add another person to the users hash
 users["James"] = {
   :twitter => "jimthetwit",
@@ -91,4 +92,10 @@ users["James"] = {
   :pets => false
 }
 
-p users
+user = "James"
+
+    if users.key?("James")
+      p "Yes, #{user} is a user!"
+    else
+      p "No, #{user} is not a user"
+    end
