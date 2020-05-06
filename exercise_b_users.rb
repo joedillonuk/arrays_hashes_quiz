@@ -94,7 +94,7 @@ users["James"] = {
 
 user = "James"
 
-    if users.key?("James")
+    if users.key?("James") # checks if a certain key exists within a hash.
       p "Yes, #{user} is a user!"
     else
       p "No, #{user} is not a user"
